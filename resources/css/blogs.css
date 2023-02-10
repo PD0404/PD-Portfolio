@@ -1,0 +1,54 @@
+h1, footer, #scroll-top {
+  background: #efe7f3;
+}
+h2 {
+  padding-right: 312px;
+}
+main {
+  margin: 40px 32px 64px 296px;
+  padding: 8px;
+}
+.content-nav-bar {
+  width: 240px;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 68px 32px;
+  position: absolute;
+  z-index: 1;
+  background-color: #c8c8c8;
+  overflow-x: hidden;
+}
+.content-nav-bar a {
+  text-decoration: none;
+  color: #de5050;
+  display: block;
+}
+.content-nav-bar a:hover {
+  background-color: #848282;
+  color: white;
+}
+/* The sticky-content class is added to the content-navbar using JS when it reaches its scroll position */
+.sticky-content {
+  position: fixed;
+  margin-top: 38px;
+}
+.sticky-content + main {
+  padding-top: 46px;
+}
+.collapse {
+  width: 100%;
+  padding: 4px;
+  font-size: medium;
+}
+.collapse b {
+  padding: 0px;
+  float: left;
+}
+.description {
+  padding: 8px 16px;
+  margin: auto;
+}
+.description img {
+  padding: 8px;
+  width: 100%;
+}
