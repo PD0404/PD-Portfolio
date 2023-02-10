@@ -1,0 +1,85 @@
+h1, footer, #scroll-top {
+    background: #f3e7e7;
+}
+
+.slideshow {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.slidesPortfolio, .slidesBuilder {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -48px;
+    padding: 4px;
+    color: #7a6ae2;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.4s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #000000cc;
+}
+
+.text, .text p {
+    color: #000000;
+    padding: 8px 0px 0px 4px;
+    margin: 0px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.codelink a {
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+.sitelink a {
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+.numbering {
+    color: #000000;
+    font-size: 12px;
+    padding: 16px 12px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

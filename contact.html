@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/index.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/contact.css" type="text/css">
+    <title>Contact</title>
+</head>
+<body>
+  <!-- Welcome Message -->
+  <h1>Thanks For Reaching Out</h1>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar" id="top-nav-bar">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contact.html" class="active-bar">Contact</a>
+    <div class="search-container">
+        <form action="/search_page.php">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- Load a hamburger icon on small screens -->
+    <a href="javascript:void(0);" class="nav-icon" onclick="expandNavBar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+  </nav>
+
+  <!-- Contact Section-->
+  <div class="connect">
+    <h2>Contact Me</h2>
+    <p>Connect with me for collaboration on any project or just to know anything about web development and mobile app development process.<br>
+      Don't hesitate to get in touch, I'm always happy to talk on any topic.
+    </p>
+    <noscript>
+      This form won't work without JavaScript but you can send me a message on 
+      <a href="https://www.linkedin.com/in/pranjal04das/"style="text-decoration: underline;">LinkedIn</a>.
+    </noscript>
+    <div class="row">
+      <div class="column">
+        <img src="resources/images/address.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <form name="contact" method="POST" action="https://pranjaldas.com/contact.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required class="form-input" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required class="form-input" />
+          <label for="message">Message: </label>
+          <textarea required maxlength="1000" id="message" name="message" class="form-input" 
+          placeholder="E.g.- I need assistance in creating a website for my store."></textarea>
+          <small><span id="message-count">1000 characters</span></small><br>
+          <input type="submit" id="send" value="SEND">
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer of the Page-->
+  <button onclick="scrollToTop()" id="scroll-top" title="Go to Top">&#8593;</button>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.github.com/PD0404" title="GitHub">
+        <i class="fa fa-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/pranjal04das/" title="LinkedIn">
+        <i class="fa fa-linkedin"></i> LinkedIn
+    </a>
+    </div>
+    <div class="copyright">
+      &copy; built by <a href="https://www.pranjaldas.com">Pranjal Das</a> 
+    </div>
+  </footer>
+  
+  <script src="resources/js/index.js"></script>
+</body>
+</html>

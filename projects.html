@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/index.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/projects.css" type="text/css">
+    <title>Projects</title>
+</head>
+<body>
+    <!-- Welcome Message -->
+    <h1>Welcome To My Project Space</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" id="top-nav-bar">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active-bar">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+        <div class="search-container">
+            <form action="/search_page.php">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- Load a hamburger icon on small screens -->
+        <a href="javascript:void(0);" class="nav-icon" onclick="expandNavBar()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+    </nav>
+
+    <!-- Main contents of the projects page -->
+    <main>
+        <h2>Portfolio Websites</h2>
+        <!-- Slideshow container for Portfolio Websites -->
+        <div class="slideshow">
+            <div class="slidesPortfolio fade" id="SH-Portfolio">
+                <div class="numbering">1 / 3</div>
+                <img src="resources/images/projects-sh-portfolio.jpg" alt="SH-Portfolio" style="width:100%">
+                <div class="codelink">
+                    <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="sitelink">
+                    <a href="https://pd0404.github.io/SH-Portfolio/index.html" target="_blank">View Site &#8594;</a>
+                </div>
+                <div class="text">
+                    <b>Sabir Hussain - Portfolio</b>
+                    <p>&#8226; HTML &#8226; Bootstrap &#8226; PHP &#8226;</p>
+                </div>
+            </div>
+            <div class="slidesPortfolio fade">
+                <div class="numbering">2 / 3</div>
+                <img src="resources/images/projects-pd-portfolio.jpg" alt="PD-Portfolio" style="width:100%">
+                <div class="codelink">
+                    <a href="https://github.com/PD0404/PD-Portfolio" target="_blank">&#8592; View Code</a>
+                </div>
+                <div class="sitelink">
+                    <a href="https://pranjaldas.com/" target="_blank">View Site &#8594;</a>
+                </div>
+                <div class="text">
+                    <b>My - Portfolio</b>
+                    <p>&#8226; HTML &#8226; CSS &#8226; JavaScript &#8226; PHP &#8226;</p>
+                </div>
+            </div>
+            <div class="slidesPortfolio fade">
+                <div class="numbering">3 / 3</div>
+                <img src="resources/images/projects-demo-portfolio.jpg" alt="Demo-Portfolio" style="width:100%">
+                <div class="codelink">
+                    <a href="https://github.com/PD0404/Demo-Portfolio" target="_blank">&#8592; View Code</a>
+                </div>
+                <div class="sitelink">
+                    <a href="https://pranjalgraphicdesigner.000webhostapp.com/" target="_blank">View Site &#8594;</a>
+                </div>
+                <div class="text">
+                    <b>Demo - Portfolio</b>
+                    <p>&#8226; HTML &#8226; CSS &#8226; Bootstrap &#8226; PHP &#8226;</p>
+                </div>
+            </div>
+            
+            <a class="prev" onclick="moveSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <h2>Websites built using Website Builders</h2>
+        <!-- Slideshow container for Websites Builder -->
+        <div class="slideshow">
+            <div class="slidesBuilder fade" id="learnwithbubul">
+                <div class="numbering">1 / 2</div>
+                <img src="resources/images/projects-learnwithbubul.jpg" alt="LearnWithBubul" style="width:100%">
+                <div class="codelink">
+                    <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="sitelink">
+                    <a href="https://learnwithbubul.wordpress.com/" target="_blank">View Site &#8594;</a>
+                </div>
+                <div class="text">
+                    <b>LearnWithBubul</b>
+                    <p>&#8226; Wordpress &#8226;</p>
+                </div>
+            </div>
+            <div class="slidesBuilder fade" id="goodhealthtips">
+                <div class="numbering">2 / 2</div>
+                <img src="resources/images/projects-goodhealthtips.jpg" alt="GoodHealthTips" style="width:100%">
+                <div class="codelink">
+                    <a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                </div>
+                <div class="sitelink">
+                    <a href="https://goodtipshealth.wixsite.com/home" target="_blank">View Site &#8594;</a>
+                </div>
+                <div class="text">
+                    <b>GoodHealthTips</b>
+                    <p>&#8226; Wix &#8226;</p>
+                </div>
+            </div>
+            
+            <a class="prev" onclick="moveSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1, 1)">&#10095;</a>
+        </div>
+    </main>
+
+    <!-- Footer of the Page-->
+    <button onclick="scrollToTop()" id="scroll-top" title="Go to Top">&#8593;</button>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.github.com/PD0404" title="GitHub">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/pranjal04das/" title="LinkedIn">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; built by <a href="https://www.pranjaldas.com">Pranjal Das</a> 
+        </div>
+    </footer>
+    
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/projects.js"></script>
+</body>
+</html>

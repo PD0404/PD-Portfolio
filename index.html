@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/index.css" type="text/css">
+    <title>Pranjal Das</title>
+</head>
+<body>
+    <!-- Welcome Message -->
+    <h1>Welcome To My Portfolio</h1>
+    
+    <!-- Navigation Bar -->
+    <nav class="nav-bar" id="top-nav-bar">
+        <a href="index.html" class="active-bar">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+        <div class="search-container">
+            <form action="/search_page.php">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- Load a hamburger icon on small screens -->
+        <a href="javascript:void(0);" class="nav-icon" onclick="expandNavBar()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+    </nav>
+
+    <!-- Main contents of the index page -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="introduction">
+                <img src="resources/images/pranjal.jpg" alt="pic">
+                <p>
+                    I'm Pranjal Das, a Software Engineer by profession highly skilled in Web Development and Mobile App Development 
+                    technologies. I have three years of work experience in two of the world class IT industries. Currently, I'm  working 
+                    as a Freelancer to help small to mid-level companies grow their businesses by developing websites and mobile 
+                    applications specific for their use.
+                </p>
+            </div>
+            <button class="collapse"><b>Read More</b></button>
+            <div class="description">
+                <h3>Experience</h3>
+                <ul>
+                    <li><p><b>Freelance Web Developer - Self-Employed</b>, Dec 2022 to Date<br>
+                        Created portfolio websites using HTML, Bootstrap, JavaScript and PHP.<br>
+                        Build online learning portal in WordPress.
+                        <p></li>
+                    <li><p><b>Software Engineer 1 - Oracle Cerner</b>, Feb 2022 to Nov 2022<br>
+                        Enhanced web applications for Revenue Cycle Department based on RESTful web-services. Worked with Big Data 
+                        technologies to analyse financial data and generate reports.
+                        <p></li>
+                    <li><p><b>Application Development Analyst - Accenture</b>, Dec 2019 to Jan 2022<br>
+                        Developed an Inventory Management Service using Java frameworks. Created microservices using Spring Boot, 
+                        Spring MVC, JPA, RestTemplate.
+                        <p></li>
+                </ul>             
+                <h3>Skills</h3>
+                <ul>
+                    <li><p><b>Front-end Technologies</b>: HTML, CSS, Bootstrap, JavaScript<p></li>
+                    <li><p><b>Back-end Technologies</b>: Java, SQL, PHP, Ruby, Spark<p></li>
+                    <li><p><b>Cloud Technologies</b>: AWS, Microsoft Azure, Oracle Cloud<p></li>
+                    <li><p><b>Tools and Systems</b>: GitHub, Visual Studio Code, Microsoft SQL Server<p></li>
+                </ul>
+                <h3>Interests and Hobbies</h3>
+                <ul>
+                    <li><p>Video Animation<p></li>
+                    <li><p>Playing Music<p></li>
+                    <li><p>Travelling<p></li>
+                </ul>
+                <div class="resources">
+                    <a href="https://drive.google.com/file/d/1nYPmZfusxvPGr2U0Bbr-yYsEkC0GVNxI/view?usp=sharing" target="_blank">&#8592; Resume</a>
+                    <a href="https://drive.google.com/drive/folders/1FaY9lRWbcDxNHXwZDWBwxaAnjE3OJCLp?usp=sharing" target="_blank">Certificates &#8594;</a>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Offerings</h2>
+            <p>I offer the following services:</p>
+                <ul>
+                    <li><p>Full-Fledged custom website development</p></li>
+                    <li><p>Website development using website builder such as Wordpress, Shopify, Wix, etc.</p></li>
+                    <li><p>Online portfolio website</p></li>
+                    <li><p>Mobile App Development</li>
+                </ul>
+            <div class="resources">
+                <a href="blogs.html#faqs">&#8592; FAQs</a>
+                <a href="projects.html">Projects &#8594;</a>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="reviewers">
+                <div class="reviews">
+                    <img src="resources/images/sabir.jpg" alt="Sabir">
+                    <b>Sabir Hussain</b>, Software Engineer.
+                    <p>Thanks, for creating my online portfolio which helps me getting more projects.</p>
+                    Rating: 
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <a href="https://pd0404.github.io/SH-Portfolio/index.html" target="_blank">View Project &#8594;</a>
+                  </div>
+                  <div class="reviews">
+                    <img src="resources/images/bubul.jpg" alt="Bubul">
+                    <b>Bubul Ahmed</b>, Educator.
+                    <p>A great thanks to Pranjal for creating an online learning portal for me.</p>
+                    Rating: 
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <a href="https://learnwithbubul.wordpress.com/" target="_blank">View Project &#8594;</a>
+                  </div>
+                  <div class="reviews">
+                    <img src="resources/images/jubair.jpg" alt="Jubair">
+                    <b>Dr. Jubair Zaman</b>, Physician.
+                    <p>Thank you for creating my online consultancy website.</p>
+                    Rating: 
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <span class="fa fa-star rating"></span>
+                    <a href="https://goodtipshealth.wixsite.com/home" target="_blank">View Project &#8594;</a>
+                  </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="connect">
+                <p>
+                    Connect with me for collaboration on any project or just to know anything about web development and mobile app 
+                    development process.
+                </p>
+                <form name="contact" method="POST" action="https://pranjaldas.com/contact.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required class="form-input" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required class="form-input" />
+                    <label for="message">Message: </label>
+                    <textarea required maxlength="1000" id="message" name="message" class="form-input" 
+                    placeholder="E.g.- I need assistance in creating a website for my store."></textarea>
+                    <small><span id="message-count">1000 characters</span></small><br>
+                    <input type="submit" id="send" value="SEND">
+                    <a href="contact.html">More Options &#8594;</a>
+                </form>    
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer of the Page-->
+    <button onclick="scrollToTop()" id="scroll-top" title="Go to Top">&#8593;</button>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.github.com/PD0404" title="GitHub">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/pranjal04das/" title="LinkedIn">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; built by <a href="https://www.pranjaldas.com">Pranjal Das</a>
+        </div>
+    </footer>
+
+    <script src="resources/js/index.js"></script>
+</body>
+</html>
