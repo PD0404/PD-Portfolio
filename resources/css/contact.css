@@ -6,6 +6,16 @@ h1, footer, #scroll-top {
 .sticky + .connect {
   padding-top: 56px;
 }
+
+.connect {
+  border: none;
+  margin: 32px 80px;
+}
+
+.connect p {
+  text-align: center;
+}
+
 /* Create two columns that float next to eachother */
 .column {
   float: left;
@@ -19,17 +29,21 @@ h1, footer, #scroll-top {
   display: table;
   clear: both;
 }
-.connect {
-  border: none;
-  margin: 32px 80px;
-}
-.connect p {
-  text-align: center;
-}
+
 /* Responsive layout - when the screen is small, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, #send {
+@media screen and (max-width: 968px) {
+  .connect {
+    margin: 32px 16px;
+  }
+  .connect p {
+    text-align: left;
+  }
+  .column {
     width: 100%;
+    padding: 20px 0px;
     margin-top: 0;
+  }
+  #send {
+    width: 100%;
   }
 }

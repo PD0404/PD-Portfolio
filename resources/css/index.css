@@ -102,7 +102,10 @@ p {
 .nav-bar .nav-icon {
   display: none;
 }
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 968px) {
+  h1 {
+    font-size: medium;
+  }
   .nav-bar a:not(:first-child), .search-container {
     display: none;
   }
@@ -168,6 +171,18 @@ footer .social-media a:hover, .copyright a:hover {
   background-color: #848282;
   color: white;
 }
+@media screen and (max-width: 560px) {
+  #scroll-top {
+    margin-right: 0px;
+  }
+  footer {
+    padding: 16px 8px 64px;
+  }
+  footer .copyright {
+    width: 100%;
+    padding-top: 16px;
+  }
+}
 
 /* Style the main section */
 main {
@@ -216,6 +231,16 @@ main {
   content: "\2796"; /* Unicode character for "minus" sign */
   float: right;
   background-color: white;
+}
+@media screen and (max-width: 968px) {
+  main {
+    margin: 64px 16px;
+  }
+  .introduction img {
+    margin-left: 20%;
+    margin-right: 60%;
+    margin-bottom: 16px;
+  }
 }
 
 /* Style the collapsible content in about section, hidden by default */
@@ -270,7 +295,7 @@ main {
   color: black;
 }
 /* Add media queries to center both the text and the image inside the container */
-@media (max-width: 720px) {
+@media (max-width: 968px) {
   .reviews {
     text-align: left;
   }
@@ -280,6 +305,8 @@ main {
     display: block;
   }
   .reviews a {
+    width: 100%;
+    padding-top: 16px;
     float: left;
   }
 }

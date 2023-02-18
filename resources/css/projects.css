@@ -83,3 +83,9 @@ h1, footer, #scroll-top {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+@media screen and (max-width: 480px) {
+    .codelink a, .sitelink a {
+        margin-bottom: 16px;
+    }
+}
