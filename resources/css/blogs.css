@@ -52,3 +52,22 @@ main {
   padding: 8px;
   width: 100%;
 }
+
+@media screen and (max-width: 968px) {
+  .content-nav-bar {
+    margin: 16px;
+    position: static;
+  }
+  main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .collapse {
+    font-size: small;
+    text-align: left;
+  }
+  .description {
+    font-size: small;
+    text-align: left;
+  }
+}
